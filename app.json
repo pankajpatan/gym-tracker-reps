@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Gym Tracker",
+    "slug": "gym-tracker",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.pankaj1997.gymtracker",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "icon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/sounds/rest-over.wav"
+          ]
+        }
+      ],
+      "expo-live-activity",
+      "expo-sharing",
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "NSHealthUpdateUsageDescription": "Gym Tracker saves your finished workouts to Apple Health. It never reads your health data.",
+          "background": false
+        }
+      ]
+    ],
+    "scheme": "gymtracker",
+    "icon": "./assets/icon.png",
+    "backgroundColor": "#0A0B0D"
+  }
+}
